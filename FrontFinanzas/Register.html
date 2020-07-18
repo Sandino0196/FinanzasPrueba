@@ -20,6 +20,10 @@
                 </thead>
                 <tbody>
                     <tr>
+                        <td>Username</td>
+                        <td><input type="text" id="txtUsername" placeholder="Username" /></td>
+                    </tr>
+                    <tr>
                         <td>Email</td>
                         <td><input type="text" id="txtEmail" placeholder="Email" /></td>
                     </tr>
@@ -83,6 +87,7 @@
                     url: 'http://localhost:60087/api/Account/Register',
                     method: 'post',
                     data: {
+                        UserName: $('#txtUsername').val(),
                         Email: $('#txtEmail').val(),
                         Password: $('#txtPassword').val(),
                         ConfirmPassword: $('#txtConfirmPassword').val()

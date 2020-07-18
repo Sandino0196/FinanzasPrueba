@@ -16,6 +16,7 @@ using Microsoft.Owin.Security.OAuth;
 using FinanzasPrueba.Models;
 using FinanzasPrueba.Providers;
 using FinanzasPrueba.Results;
+using System.Web.Http.Cors;
 
 namespace FinanzasPrueba.Controllers
 {
