@@ -19,6 +19,7 @@ using FinanzasPrueba.Results;
 
 namespace FinanzasPrueba.Controllers
 {
+    [EnableCorsAttribute("*", "*", "*")]
     [Authorize]
     [RoutePrefix("api/Account")]
     public class AccountController : ApiController
